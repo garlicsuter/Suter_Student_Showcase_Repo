@@ -189,7 +189,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Author Name
+  m_Text: '
 
 '
 --- !u!222 &353963371
@@ -460,7 +460,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
 --- !u!222 &1246563711
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -687,7 +687,7 @@ GameObject:
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1031,9 +1031,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Description HereDescription HereDescription HereDescription HereDescription
-    HereDescription HereDescription HereDescription HereDescription HereDescription
-    HereDescription HereDescription Here
+  m_Text: 
 --- !u!222 &1975983607
 CanvasRenderer:
   m_ObjectHideFlags: 0
