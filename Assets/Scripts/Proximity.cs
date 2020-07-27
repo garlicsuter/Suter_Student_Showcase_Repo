@@ -39,24 +39,45 @@ public class Proximity : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (other)
-        {
-           dist = Vector3.Distance(transform.position, other.position);
-            print("Distance to player: " + dist);
-            if (dist < 4)
-            {
-                myTitle.text = newTitle;
-                myAuthor.text = newAuthor;
-                myDesc.text = newDesc;
-            }
+        dist = Vector3.Distance(transform.position, other.position);
+        print("Distance to player: " + dist);
 
-            else {
-                myTitle.text = "";
-                myAuthor.text = "";
-                myDesc.text = "";
-            }
-          
+        if (dist < 4)
+        {
+            myTitle.text = newTitle;
+            myAuthor.text = newAuthor;
+            myDesc.text = newDesc;
         }
 
+        else if(dist > 4 && dist < 5){
+            myTitle.text = "";
+            myAuthor.text = "";
+            myDesc.text = ""; 
+        }
     }
+
 }
+    //void Update()
+    //{
+    //    if (other)
+    //    {
+    //        dist = Vector3.Distance(transform.position, other.position);
+    //        print("Distance to player: " + dist);
+    //        if (dist < 4)
+    //        {
+    //            myTitle.text = newTitle;
+    //            myAuthor.text = newAuthor;
+    //            myDesc.text = newDesc;
+    //        }
+
+    //        else
+    //        {
+    //            myTitle.text = "";
+    //            myAuthor.text = "";
+    //            myDesc.text = "";
+    //        }
+
+    //    }
+
+    //}
+

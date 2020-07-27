@@ -25,6 +25,6 @@ public class notes : MonoBehaviour
     //    - In "Textures" Folder, import JPEG's
     //    - New plane, drag JPEG onto plane IN HIERARCHY (Sometimes won't drag onto scene view plane)
     //    - Adjust all lights intensity up to 2. Disable Directional (Sun) Light
-    //    - 3.3 Proximity Script: Gotchya: I forgot to apply tags to texts Title, Auth, Description
+    //    - 3.3 Proximity Script: Gotchya: I forgot to apply tags to texts Title, Auth, Description (set description vertical overflow to Overflow)
     //    - 3.3 Proximity Script: Gotchya 2: Text does not disappear after moving away from art...Fix with else set text to empty strings
 }
