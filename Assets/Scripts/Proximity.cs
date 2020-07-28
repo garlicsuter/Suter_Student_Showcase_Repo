@@ -18,6 +18,8 @@ public class Proximity : MonoBehaviour
     private GameObject message1;
     private GameObject message2;
     private GameObject message3;
+    private GameObject bg_fade;
+
 
 
     // Start is called before the first frame update
@@ -34,7 +36,11 @@ public class Proximity : MonoBehaviour
         myAuthor.text = "";
         myDesc = message3.GetComponent<Text>();
         myDesc.text = "";
+
+        bg_fade = GameObject.Find("bg_fade");
     }
+        
+   
 
     // Update is called once per frame
     void Update()
@@ -47,12 +53,15 @@ public class Proximity : MonoBehaviour
             myTitle.text = newTitle;
             myAuthor.text = newAuthor;
             myDesc.text = newDesc;
+            bg_fade.SetActive(true);
         }
 
-        else if(dist > 4 && dist < 5){
+        else if(dist > 4 && dist < 5)
+        {
             myTitle.text = "";
             myAuthor.text = "";
-            myDesc.text = ""; 
+            myDesc.text = "";
+            bg_fade.SetActive(false);
         }
     }
 
