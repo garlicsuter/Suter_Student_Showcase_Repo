@@ -46,7 +46,7 @@ public class Proximity : MonoBehaviour
     void Update()
     {
         dist = Vector3.Distance(transform.position, other.position);
-        print("Distance to player: " + dist);
+        //print("Distance to player: " + dist);
 
         if (dist < 4)
         {

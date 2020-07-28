@@ -20,11 +20,10 @@ public class Proximity_w_Audio : MonoBehaviour
     private GameObject message3;
     private GameObject bg_fade;
 
-    public AudioClip narration;
-    static AudioSource audioSrc;
+    AudioSource audioData;
 
 
-
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -41,7 +40,11 @@ public class Proximity_w_Audio : MonoBehaviour
         myDesc.text = "";
 
         bg_fade = GameObject.Find("bg_fade");
-        audioSrc = GetComponent<AudioSource>();
+
+        audioData = GetComponent<AudioSource>();
+        audioData.Play(0);
+        Debug.Log("started");
+
     }
         
    
@@ -59,8 +62,6 @@ public class Proximity_w_Audio : MonoBehaviour
             myDesc.text = newDesc;
             bg_fade.SetActive(true);
 
-            
-            audioSrc.PlayOneShot(narration);
         }
 
         else if(dist > 4 && dist < 5)
