@@ -18,7 +18,7 @@ public class Proximity : MonoBehaviour
     private GameObject message1;
     private GameObject message2;
     private GameObject message3;
-    private GameObject bg_fade;
+    //private GameObject bg_fade;
 
 
 
@@ -37,7 +37,7 @@ public class Proximity : MonoBehaviour
         myDesc = message3.GetComponent<Text>();
         myDesc.text = "";
 
-        bg_fade = GameObject.Find("bg_fade");
+        //bg_fade = GameObject.Find("bg_fade");
     }
         
    
@@ -48,20 +48,20 @@ public class Proximity : MonoBehaviour
         dist = Vector3.Distance(transform.position, other.position);
         //print("Distance to player: " + dist);
 
-        if (dist < 4)
+        if (dist < 6)
         {
             myTitle.text = newTitle;
             myAuthor.text = newAuthor;
             myDesc.text = newDesc;
-            bg_fade.SetActive(true);
+            //bg_fade.SetActive(true);
         }
 
-        else if(dist > 4 && dist < 5)
+        else if(dist > 6 && dist < 7)
         {
             myTitle.text = "";
             myAuthor.text = "";
             myDesc.text = "";
-            bg_fade.SetActive(false);
+            //bg_fade.SetActive(false);
         }
     }
 

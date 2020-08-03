@@ -18,12 +18,10 @@ public class Proximity_w_Audio : MonoBehaviour
     private GameObject message1;
     private GameObject message2;
     private GameObject message3;
-    private GameObject bg_fade;
-
-    AudioSource audioData;
-
+    //private GameObject bg_fade;
 
    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,12 +36,7 @@ public class Proximity_w_Audio : MonoBehaviour
         myAuthor.text = "";
         myDesc = message3.GetComponent<Text>();
         myDesc.text = "";
-
-        bg_fade = GameObject.Find("bg_fade");
-
-        audioData = GetComponent<AudioSource>();
-        audioData.Play(0);
-        Debug.Log("started");
+        //bg_fade = GameObject.Find("bg_fade");
 
     }
         
@@ -53,15 +46,14 @@ public class Proximity_w_Audio : MonoBehaviour
     void Update()
     {
         dist = Vector3.Distance(transform.position, other.position);
-        print("Distance to player: " + dist);
+        //print("Distance to player: " + dist);
 
         if (dist < 4)
         {
             myTitle.text = newTitle;
             myAuthor.text = newAuthor;
             myDesc.text = newDesc;
-            bg_fade.SetActive(true);
-
+            //bg_fade.SetActive(true);
         }
 
         else if(dist > 4 && dist < 5)
@@ -69,32 +61,8 @@ public class Proximity_w_Audio : MonoBehaviour
             myTitle.text = "";
             myAuthor.text = "";
             myDesc.text = "";
-            bg_fade.SetActive(false);
         }
     }
 
 }
-    //void Update()
-    //{
-    //    if (other)
-    //    {
-    //        dist = Vector3.Distance(transform.position, other.position);
-    //        print("Distance to player: " + dist);
-    //        if (dist < 4)
-    //        {
-    //            myTitle.text = newTitle;
-    //            myAuthor.text = newAuthor;
-    //            myDesc.text = newDesc;
-    //        }
-
-    //        else
-    //        {
-    //            myTitle.text = "";
-    //            myAuthor.text = "";
-    //            myDesc.text = "";
-    //        }
-
-    //    }
-
-    //}
 
