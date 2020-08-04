@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//Script thanks to Youtube channel "Lurony"
+// Script thanks to Youtube channel "Lurony"
 // viewable here: https://www.youtube.com/watch?v=t-wamt3xilA
+
 public class PlayVideo : MonoBehaviour
 {
 

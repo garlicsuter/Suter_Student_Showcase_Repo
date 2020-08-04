@@ -18,7 +18,7 @@ public class Proximity : MonoBehaviour
     private GameObject message1;
     private GameObject message2;
     private GameObject message3;
-    //private GameObject bg_fade;
+    public GameObject bg_fade;
 
 
 
@@ -36,8 +36,7 @@ public class Proximity : MonoBehaviour
         myAuthor.text = "";
         myDesc = message3.GetComponent<Text>();
         myDesc.text = "";
-
-        //bg_fade = GameObject.Find("bg_fade");
+        //bg_fade = GameObject.FindWithTag("Fade");
     }
         
    
@@ -53,7 +52,7 @@ public class Proximity : MonoBehaviour
             myTitle.text = newTitle;
             myAuthor.text = newAuthor;
             myDesc.text = newDesc;
-            //bg_fade.SetActive(true);
+            bg_fade.SetActive(true);
         }
 
         else if(dist > 6 && dist < 7)
@@ -61,7 +60,7 @@ public class Proximity : MonoBehaviour
             myTitle.text = "";
             myAuthor.text = "";
             myDesc.text = "";
-            //bg_fade.SetActive(false);
+            bg_fade.SetActive(false);
         }
     }
 

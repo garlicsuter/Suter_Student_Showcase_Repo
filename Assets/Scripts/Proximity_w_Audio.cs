@@ -18,7 +18,7 @@ public class Proximity_w_Audio : MonoBehaviour
     private GameObject message1;
     private GameObject message2;
     private GameObject message3;
-    //private GameObject bg_fade;
+    public GameObject bg_fade;
 
    
 
@@ -53,7 +53,7 @@ public class Proximity_w_Audio : MonoBehaviour
             myTitle.text = newTitle;
             myAuthor.text = newAuthor;
             myDesc.text = newDesc;
-            //bg_fade.SetActive(true);
+            bg_fade.SetActive(true);
         }
 
         else if(dist > 4 && dist < 5)
