@@ -38,8 +38,8 @@ public class Proximity : MonoBehaviour
         myDesc.text = "";
         //bg_fade = GameObject.FindWithTag("Fade");
     }
-        
-   
+
+
 
     // Update is called once per frame
     void Update()
@@ -55,7 +55,7 @@ public class Proximity : MonoBehaviour
             bg_fade.SetActive(true);
         }
 
-        else if(dist > 6 && dist < 7)
+        else if (dist > 6 && dist < 7)
         {
             myTitle.text = "";
             myAuthor.text = "";
@@ -65,27 +65,28 @@ public class Proximity : MonoBehaviour
     }
 
 }
-    //void Update()
-    //{
-    //    if (other)
-    //    {
-    //        dist = Vector3.Distance(transform.position, other.position);
-    //        print("Distance to player: " + dist);
-    //        if (dist < 4)
-    //        {
-    //            myTitle.text = newTitle;
-    //            myAuthor.text = newAuthor;
-    //            myDesc.text = newDesc;
-    //        }
+//void Update()
+//{
+//    if (other)
+//    {
+//        dist = Vector3.Distance(transform.position, other.position);
+//        print("Distance to player: " + dist);
+//        if (dist < 4)
+//        {
+//            myTitle.text = newTitle;
+//            myAuthor.text = newAuthor;
+//            myDesc.text = newDesc;
+//        }
 
-    //        else
-    //        {
-    //            myTitle.text = "";
-    //            myAuthor.text = "";
-    //            myDesc.text = "";
-    //        }
+//        else
+//        {
+//            myTitle.text = "";
+//            myAuthor.text = "";
+//            myDesc.text = "";
+//        }
 
-    //    }
+//    }
 
-    //}
+//}
+
 
